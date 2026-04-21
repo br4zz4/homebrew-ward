@@ -5,22 +5,22 @@ cask "ward" do
   on_macos do
     on_intel do
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_darwin_amd64.tar.gz"
-      sha256 "b615bd42583d1bd4c80126063f53bff1666694227ac459bd4b230b07a9615659"
+      sha256 "d96db9ecd9cfafc55944a81d4520a7c86aef68d982d19b4afa3faf89e74e6416"
     end
     on_arm do
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_darwin_arm64.tar.gz"
-      sha256 "6322467e4d63f1373f6d43e8ae9125bab47f7608f45be10a5186c007aec46580"
+      sha256 "44447487c433c11d74cc5005d70b33abf45efd905b9d09f28d442488acb4fcee"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_linux_amd64.tar.gz"
-      sha256 "442c86384a0a14ae27ddd9e08156b84d90806c42892cd9014e9578a39f6657de"
+      sha256 "5c67f36893f071ad86e6db28d8253b6c662075c526471ba1e7d1243e1a3914f8"
     end
     on_arm do
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_linux_arm64.tar.gz"
-      sha256 "e3d3e7d8d1a2c58cfe0f11444d23bad3be4130819831d88be470aa0d6d4a3978"
+      sha256 "d5dcbb0e312bc816eb09bcb7508bc631a7a8ade6873dca7e16bfb7075876b789"
     end
   end
 
@@ -37,6 +37,9 @@ cask "ward" do
     ]
 
   binary "ward"
+  generate_completions_from_executable "ward", "completion",
+    shell_parameter_format: :none,
+    shells: [:zsh, :bash, :fish]
 
   # No zap stanza required
 
