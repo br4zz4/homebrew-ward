@@ -5,32 +5,32 @@ cask "ward" do
                    args: ["-dr", "com.apple.quarantine", staged_path.to_s]
   end
 
-  version "0.1.38"
+  version "0.1.40"
 
   on_macos do
     on_intel do
-      sha256 "678cc399fa4646542eb67d0b7b9d9937cf38250cdab818d06b789fffb9490c7d"
+      sha256 "847cf059ebb88a4c7050b09e8917aa7a828d55f811511216283b0435f2bb0b5e"
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "193c2fa61f7f53dd4415ee2d223e285c71542d69aeb87642e28b4956655b1365"
+      sha256 "c6559904ad6b0f15ad3e793d0e13f2c85bc7ecdc0833243083ac99cd64fba933"
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "6192d2a7e6b7076184a75df5783cda256aba16d02e2ef59191e5fefe225c4852"
+      sha256 "6ccdf5ac2f963530feb6f7a8646c7988880ac74a5daf1bc52d4f7e16bd61690f"
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "eb99924da230d742ecd051fd86037c80d4a7d05d6cc79aed1795acf194bf4b81"
+      sha256 "6f8311f2a7c67cd38cf4f6f3d4ec2a240e2c5ef5ee10a39c892428da260baf1d"
       url "https://github.com/oporpino/ward/releases/download/v#{version}/ward_linux_arm64.tar.gz"
     end
   end
 
   name "ward"
-  desc "Hierarchical secrets management using SOPS+age."
+  desc "Hierarchical secrets management with zero external dependencies."
   homepage "https://github.com/oporpino/ward"
 
   livecheck do
