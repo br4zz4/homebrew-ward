@@ -10,28 +10,28 @@ cask "ward" do
   on_macos do
     on_intel do
       sha256 "3472e5cb88809ea8962e271b0cf7ff901495f900026f65e302c47e0c827ca18b"
-      url "https://github.com/brazza-tech/ward/releases/download/v#{version}/ward_darwin_amd64.tar.gz"
+      url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_darwin_amd64.tar.gz"
     end
     on_arm do
       sha256 "e72f510cde29b6aaa6fc3fa83993170df6ab03fc4acfae5d04f2cdd4a0a22d67"
-      url "https://github.com/brazza-tech/ward/releases/download/v#{version}/ward_darwin_arm64.tar.gz"
+      url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "c9f630dac154355c1178c24c7e3abc9f9e4ecbf0b0fc84b043048e2a636bbd0a"
-      url "https://github.com/brazza-tech/ward/releases/download/v#{version}/ward_linux_amd64.tar.gz"
+      url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_linux_amd64.tar.gz"
     end
     on_arm do
       sha256 "341662e505ea0fe49fe5c83b0d424b68db9f0ac4af7aa6df655fbbae047ba1e5"
-      url "https://github.com/brazza-tech/ward/releases/download/v#{version}/ward_linux_arm64.tar.gz"
+      url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_linux_arm64.tar.gz"
     end
   end
 
   name "ward"
   desc "Hierarchical secrets management with zero external dependencies."
-  homepage "https://github.com/brazza-tech/ward"
+  homepage "https://github.com/br4zz4/ward"
 
   livecheck do
     skip "Auto-generated on release."
