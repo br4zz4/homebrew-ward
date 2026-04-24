@@ -5,32 +5,32 @@ cask "ward" do
                    args: ["-dr", "com.apple.quarantine", staged_path.to_s]
   end
 
-  version "0.1.43"
+  version "0.1.48"
 
   on_macos do
     on_intel do
-      sha256 "3472e5cb88809ea8962e271b0cf7ff901495f900026f65e302c47e0c827ca18b"
+      sha256 "47ed64c24e8dfd7dc172e45634a106cff50dd27cf5fdc0a721288138fff6f08a"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "e72f510cde29b6aaa6fc3fa83993170df6ab03fc4acfae5d04f2cdd4a0a22d67"
+      sha256 "1fe6ff0e6cdb56990f0c4441e61010b9bc63ceceeaf65de61f87f6c9a727a37e"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "c9f630dac154355c1178c24c7e3abc9f9e4ecbf0b0fc84b043048e2a636bbd0a"
+      sha256 "e54df93fd3886343f9a9dfb491589244cc26ed1a0e15f96b69119e16b26c792c"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "341662e505ea0fe49fe5c83b0d424b68db9f0ac4af7aa6df655fbbae047ba1e5"
+      sha256 "d33e47370482762dea94287d21091f39a25cfd7376418aed0c6a807cd42eee8b"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_linux_arm64.tar.gz"
     end
   end
 
   name "ward"
-  desc "Hierarchical secrets management with zero external dependencies."
+  desc "Hierarchical secrets manager"
   homepage "https://github.com/br4zz4/ward"
 
   livecheck do
