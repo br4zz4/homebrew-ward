@@ -5,26 +5,26 @@ cask "ward" do
                    args: ["-dr", "com.apple.quarantine", staged_path.to_s]
   end
 
-  version "0.1.59"
+  version "0.1.60"
 
   on_macos do
     on_intel do
-      sha256 "2e83bf3476afc46a6716ab43ae08318faef1779c35f130369066c82697f8a635"
+      sha256 "2378e3f11ad1f6103effd4b4670c6b860f69c2822861eab1d19e1690844bc106"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "875c15513c6e5126dd9877f0def29dcd2bba75a98d0c08c6867df891933807f2"
+      sha256 "e633e3dcd0cde09fde5348073305bbbb85664339568ae5ae480a6716f29c3ffe"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "9e71fc182f4e082eed9ea5d6ba7d05b438678cb5f7faa7fbf7fdd407d829ee42"
+      sha256 "a3d97be450aac25a40b7087005821c10719789776db41166db330caccf06529b"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "709e9092569411f77c0885d7e6430f708aeaf430d9b51eb14c6eb64b99e43d97"
+      sha256 "8886f6feed919425097493097438604207292738885424120e487c68e56881be"
       url "https://github.com/br4zz4/ward/releases/download/v#{version}/ward_linux_arm64.tar.gz"
     end
   end
